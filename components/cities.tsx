@@ -3,40 +3,40 @@ import { Badge } from "@/components/ui/badge"
 
 const cities = [
   {
-    name: "Toronto",
-    country: "Canada",
-    sqft: "125,000",
-    spaces: ["Data Centers", "Office Space", "R&D Labs"],
-    occupancy: "95%",
+    name: "Mirabel",
+    country: "Quebec",
+    sqft: "100,000",
+    spaces: ["Data Center", "Office Space", "R&D Labs", "Flex Industrial"],
+    occupancy: "25%",
     icon: Server,
-    highlights: ["24/7 Security", "Renewable Energy", "Fiber Connection"],
+    highlights: ["Montréal-Mirabel Int'l Airport"],
   },
   {
-    name: "Vancouver",
-    country: "Canada",
-    sqft: "85,000",
-    spaces: ["Data Centers", "Innovation Hub"],
+    name: "Waterloo",
+    country: "Ontario",
+    sqft: "1,000,000",
+    spaces: ["Innovation Hub", "Data Center", "Office Space", "R&D Labs", "Flex Industrial"],
     occupancy: "90%",
     icon: Building2,
-    highlights: ["Cooling Systems", "Green Infrastructure", "Tech Campus"],
+    highlights: ["RIM Park / RIM Northfield Campus", "Marsland Dr."],
   },
   {
-    name: "Montreal",
-    country: "Canada",
-    sqft: "150,000",
-    spaces: ["Data Centers", "Research Facilities", "Cold Storage"],
-    occupancy: "88%",
+    name: "Kitchener",
+    country: "Ontario",
+    sqft: "500,000",
+    spaces: ["Data Center", "Office Space", "R&D Labs", "Flex Industrial"],
+    occupancy: "85%",
     icon: Factory,
-    highlights: ["Natural Cooling", "AI Research Hub", "Quantum Ready"],
+    highlights: ["Duke St.", "Victoria St. N", "Weber St. W"],
   },
   {
-    name: "Calgary",
-    country: "Canada",
-    sqft: "95,000",
-    spaces: ["Data Centers", "Distribution Centers"],
-    occupancy: "92%",
+    name: "Ottawa",
+    country: "Ontario",
+    sqft: "10,000",
+    spaces: ["Office Space"],
+    occupancy: "75%",
     icon: Warehouse,
-    highlights: ["Solar Powered", "Edge Computing", "Strategic Location"],
+    highlights: ["Bank St."],
   },
 ]
 
@@ -61,7 +61,7 @@ export default function Cities() {
                   {city.name}
                   <span className="text-sm font-normal text-muted-foreground ml-2">{city.country}</span>
                 </h3>
-                <p className="text-muted-foreground mt-1">Available Space: {city.sqft} sq ft</p>
+                <p className="text-muted-foreground mt-1">{city.sqft} sq. ft.</p>
               </div>
               <city.icon className="h-12 w-12 text-primary opacity-80 group-hover:opacity-100 transition-opacity" />
             </div>

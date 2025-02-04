@@ -20,11 +20,10 @@ export default function About() {
         <div className="relative aspect-square">
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-accent/10 to-transparent rounded-3xl" />
           <Image
-            src="/placeholder.svg?height=600&width=600"
-            alt="Data Center Interior"
-            width={600}
-            height={600}
+            src="/RIM_Park.jpg"
+            alt="RIM Park"
             className="rounded-3xl object-cover"
+            fill
           />
         </div>
       </div>

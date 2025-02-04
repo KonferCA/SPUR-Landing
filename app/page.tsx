@@ -1,6 +1,6 @@
 import Navbar from "@/components/navbar"
 import Hero from "@/components/hero"
-import Features from "@/components/features"
+import Vision from "@/components/vision"
 import About from "@/components/about"
 import Assets from "@/components/assets"
 import Cities from "@/components/cities"
@@ -19,14 +19,14 @@ export default function Home() {
       </div>
 
       <div className="relative z-10">
-        <Navbar />
-        <Hero />
+        <Navbar/>
+        <Hero/>
         <About />
-        <Features />
+        <Vision />
         <Assets />
         <Cities />
         <Partners />
-        <CTA />
+        {/* <CTA /> */}
         <Footer />
       </div>
     </div>

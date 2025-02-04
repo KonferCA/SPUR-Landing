@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Linkedin } from "lucide-react"
+import { Instagram, Twitter, Linkedin } from "lucide-react"
 
 export default function Navbar() {
   return (
@@ -27,15 +27,42 @@ export default function Navbar() {
           </Link>
         </nav>
         <div className="flex items-center space-x-4">
-          <Link href="https://linkedin.com/company/spur-innovation-center" target="_blank" rel="noreferrer">
+          <Link
+            href="https://instagram.com/spur_innovation/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button variant="ghost" size="icon">
+              <Instagram className="h-4 w-4" />
+              <span className="sr-only">LinkedIn</span>
+            </Button>
+          </Link>
+
+          <Link
+            href="https://x.com/SpurInnovation"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button variant="ghost" size="icon">
+              <Twitter className="h-4 w-4" />
+              <span className="sr-only">LinkedIn</span>
+            </Button>
+          </Link>
+
+          <Link
+            href="https://linkedin.com/company/spur-innovation-center"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button variant="ghost" size="icon">
               <Linkedin className="h-4 w-4" />
               <span className="sr-only">LinkedIn</span>
             </Button>
           </Link>
-          <Button variant="ghost" size="sm">
+
+          {/* <Button variant="ghost" size="sm">
             Contact
-          </Button>
+          </Button> */}
         </div>
       </div>
     </header>
