@@ -1,5 +1,6 @@
 /*
  *
- * @component 
+ * @component Navbar
  *
  */
+export { Navbar } from "./Navbar/Navbar";
