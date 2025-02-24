@@ -5,16 +5,24 @@ const HeroSection: React.FC = () => {
     <div>
       <section className="relative h-screen">
         {/* 4 Headers */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 text-7xl flex gap-18 mt-10 text-amber-500">
-          <h1>Innovative</h1>
-          <h1>Resources</h1>
+        <div className="absolute top-1/6 left-1/2 transform -translate-x-1/2 text-7xl w-full flex gap-18 text-amber-500">
+          <h1 className="flex-1 text-right">
+            <span className="inline-block text-gradient">Innovative</span>
+          </h1>
+          <h1 className="flex-1 text-left">
+            <span className="inline-block text-gradient">Resources</span>
+          </h1>
         </div>
-        <div className="absolute left-1/2 transform -translate-x-1/2 text-7xl flex gap-48 mt-32 text-amber-500">
-          <h1>Strategic</h1>
-          <h1>Advantages</h1>
+        <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 text-7xl w-full flex gap-72">
+          <h1 className="flex-1 text-right">
+            <span className="inline-block text-gradient">Strategic</span>
+          </h1>
+          <h1 className="flex-1 text-left">
+            <span className="inline-block text-gradient">Advantages</span>
+          </h1>
         </div>
         {/* Stats and Building */}
-        <div className="absolute top-2/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center">
           {/* subdiv: left callout */}
           <div className="flex flex-col items-end gap-5">
             <p className="text-right">

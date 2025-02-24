@@ -8,7 +8,7 @@ import React from "react";
  */
 const Navbar: React.FC = () => {
   return (
-    <header className="relative flex w-full items-center justify-between px-10 py-6">
+    <header className="fixed flex w-full items-center justify-between px-10 py-6">
       {/* Directories */}
       <div className="flex gap-x-5 ">
         <a>Our Story</a>
