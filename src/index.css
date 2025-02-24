@@ -5,3 +5,7 @@
     @apply text-white;
   }
 }
+
+.text-gradient {
+  @apply font-sans bg-gradient-to-r from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
+}
