@@ -38,7 +38,7 @@ export default {
       },
 
       fontFamily: {
-        sans: ['"Raleway"', ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", "sans-serif"],
       },
 
       colors: {
