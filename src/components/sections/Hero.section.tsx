@@ -1,29 +1,33 @@
+import { SpurBuilding } from "@assets";
+
 const HeroSection: React.FC = () => {
   return (
     <div>
-      <section>
+      <section className="relative h-screen">
         {/* 4 Headers */}
-        <div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 text-7xl flex gap-18 mt-10 text-amber-500">
           <h1>Innovative</h1>
-          <h1>Resource</h1>
+          <h1>Resources</h1>
         </div>
-        <div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 text-7xl flex gap-48 mt-32 text-amber-500">
           <h1>Strategic</h1>
           <h1>Advantages</h1>
         </div>
         {/* Stats and Building */}
-        <div>
+        <div className="absolute top-2/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center">
           {/* subdiv: left callout */}
-          <div>
-            <p>
+          <div className="flex flex-col items-end gap-5">
+            <p className="text-right">
               Advanced solutions for technology and innovation-focused companies
             </p>
-            <button>Learn more</button>
+            <button className="w-fit">Learn more</button>
           </div>
           {/* subdiv: building image*/}
-          <div>image</div>
+          <div className="">
+            <img src={SpurBuilding} className="w-screen" alt="" />
+          </div>
           {/* subdiv: right stats */}
-          <div>
+          <div className="flex flex-col gap-5">
             <p>Companies utilizing resources</p>
             <h2>15K+</h2>
             <p>Tech workers</p>
