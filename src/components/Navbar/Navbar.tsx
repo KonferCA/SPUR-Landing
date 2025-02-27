@@ -8,7 +8,7 @@ import React from "react";
  */
 const Navbar: React.FC = () => {
   return (
-    <header className="fixed flex w-full items-center justify-between px-10 py-6">
+    <header className="fixed flex w-full items-center justify-between px-10 py-6 z-50">
       {/* Directories */}
       <div className="flex gap-x-5 ">
         <a>Our Story</a>
@@ -22,8 +22,8 @@ const Navbar: React.FC = () => {
       </div>
       {/* Buttons */}
       <div className="flex gap-x-5">
-        <button className="uppercase">Investor Portal</button>
-        <button className="uppercase">Let's talk</button>
+        <button className="button-gradient">Investor Portal</button>
+        <button className="button-gradient">Let's talk</button>
       </div>
     </header>
   );
