@@ -8,7 +8,7 @@
     @apply font-sans font-thin;
   }
   h2 {
-    @apply text-4xl font-sans bg-gradient-to-b from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
+    @apply text-4xl font-sans bg-gradient-to-br from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
   }
   h3 {
     @apply text-3xl text-white font-sans bg-clip-text;
@@ -24,9 +24,16 @@
 }
 
 .button-gradient {
-  @apply uppercase font-thin border-2 border-[#F59047] rounded-full bg-transparent px-5 py-1.5 text-white transition duration-300 hover:border-white hover:cursor-pointer;
+  @apply uppercase font-thin border-2 border-[#F59047] rounded-full bg-transparent px-5 py-1.5 text-white 
+  transition duration-300 hover:border-white hover:cursor-pointer;
 }
 
 .button-white {
-  @apply uppercase font-thin border-2 border-[#ffffff] rounded-full bg-transparent px-5 py-1.5 text-white transition duration-300 hover:border-white hover:cursor-pointer;
+  @apply uppercase font-thin border-2 border-[#ffffff] rounded-full bg-transparent px-5 py-1.5 text-white 
+  transition duration-300 hover:border-white hover:cursor-pointer;
+}
+
+.button-orange {
+  @apply uppercase text-sm mb-2 px-6 py-3 text-white rounded-full bg-[#F4802F] transition-all duration-300 ease-in-out
+  shadow-[0_0_15px_rgba(245,144,71,0.5)] hover:shadow-[0_0_25px_rgba(245,144,71,0.4)];
 }

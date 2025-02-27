@@ -8,7 +8,7 @@ import {
 const HeroSection: React.FC = () => {
   return (
     <div>
-      <section className="relative h-screen">
+      <section className="relative h-screen bg-[radial-gradient(circle,_rgba(150,156,161,0.25)_0%,_rgba(255,238,226,0)_70%)]">
         {/* 4 Headers */}
         <div className="absolute top-1/6 left-1/2 transform -translate-x-1/2 text-7xl w-full flex gap-36 text-amber-500">
           <h1 className="flex-1 text-right">
@@ -71,9 +71,7 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col items-center w-1/3 ">
-            <button className="uppercase text-sm bg-[#F4802F] rounded-full px-4 py-2 mb-2">
-              Get started
-            </button>
+            <button className="button-orange">Get started</button>
             <DoubleArrowDownIcon width={16} height={16} />
           </div>
           <div className="flex gap-5 w-1/3 justify-end items-end pr-14 pb-14">
