@@ -5,10 +5,13 @@
     @apply text-white font-sans;
   }
   p {
-    @apply font-sans;
+    @apply font-sans font-thin;
   }
   h2 {
     @apply text-4xl font-sans bg-gradient-to-b from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
+  }
+  h3 {
+    @apply text-3xl text-white font-sans bg-clip-text;
   }
 }
 
@@ -17,7 +20,7 @@
 }
 
 .text-gradient-reverse {
-  @apply font-sans bg-gradient-to-r from-[#FFEEE2] to-[#F59047] bg-clip-text text-transparent;
+  @apply font-sans bg-gradient-to-br from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
 }
 
 .button-gradient {
