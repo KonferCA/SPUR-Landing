@@ -2,7 +2,7 @@ import { Navbar, HeroSection } from "@components";
 
 const Landing: React.FC = () => {
   return (
-    <div className="bg-[#0D1A26] transition ease-in">
+    <div className="bg-[#050B10] transition ease-in">
       <Navbar />
       <main>
         <HeroSection />
