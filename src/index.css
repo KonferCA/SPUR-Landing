@@ -2,10 +2,28 @@
 
 @layer base {
   body {
-    @apply text-white;
+    @apply text-white font-sans;
+  }
+  p {
+    @apply font-sans;
+  }
+  h2 {
+    @apply text-4xl font-sans bg-gradient-to-b from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
   }
 }
 
 .text-gradient {
-  @apply font-sans bg-gradient-to-r from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
+  @apply font-sans bg-gradient-to-tl from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
+}
+
+.text-gradient-reverse {
+  @apply font-sans bg-gradient-to-r from-[#FFEEE2] to-[#F59047] bg-clip-text text-transparent;
+}
+
+.button-gradient {
+  @apply uppercase font-thin border-2 border-[#F59047] rounded-full bg-transparent px-5 py-1.5 text-white transition duration-300 hover:border-white hover:cursor-pointer;
+}
+
+.button-white {
+  @apply uppercase font-thin border-2 border-[#ffffff] rounded-full bg-transparent px-5 py-1.5 text-white transition duration-300 hover:border-white hover:cursor-pointer;
 }
