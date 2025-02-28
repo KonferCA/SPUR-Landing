@@ -1,32 +1,39 @@
 @import "tailwindcss";
 
+body {
+  font-family: "Geist", sans-serif;
+}
+
 @layer base {
   body {
-    @apply text-white font-sans;
+    @apply text-white;
   }
-  p {
-    @apply font-sans font-thin;
+  h1 {
+    @apply font-light;
   }
   h2 {
-    @apply text-4xl font-sans bg-gradient-to-br from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
+    @apply text-4xl bg-gradient-to-br from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
   }
   h3 {
-    @apply text-3xl text-white font-sans bg-clip-text;
+    @apply text-3xl text-white bg-clip-text;
+  }
+  p {
+    @apply text-white font-thin;
   }
 }
 
 .text-gradient {
-  @apply font-sans bg-gradient-to-tl from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
+  @apply bg-gradient-to-tl from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
 }
 
 .text-gradient-reverse {
-  @apply font-sans bg-gradient-to-br from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
+  @apply bg-gradient-to-br from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
 }
 
 /* Button Styling */
 
 .button-gradient {
-  @apply uppercase font-thin border-2 border-[#F59047] rounded-full bg-transparent px-5 py-1.5 text-white  hover:cursor-pointer
+  @apply uppercase font-thin border-2 border-[#F59047] rounded-full bg-transparent px-5 py-1.5 text-white hover:cursor-pointer
   transition-all duration-300 ease-in-out shadow-[inset_0_0_15px_rgba(245,144,71,0.4)] hover:shadow-[inset_0_0_25px_rgba(245,144,71,0.5)];
 }
 

@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
     <div>
       <section className="relative h-screen bg-[radial-gradient(circle,_rgba(150,156,161,0.25)_0%,_rgba(255,238,226,0)_70%)]">
         {/* 4 Headers */}
-        <div className="absolute top-1/6 left-1/2 transform -translate-x-1/2 text-7xl w-full flex gap-36 text-amber-500">
+        <div className="absolute top-34 left-1/2 transform -translate-x-1/2 text-8xl w-full flex gap-20 text-amber-500">
           <h1 className="flex-1 text-right">
             <span className="inline-block text-gradient">Innovative</span>
           </h1>
@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
             <span className="inline-block text-gradient">Resources</span>
           </h1>
         </div>
-        <div className="absolute top-1/5 left-1/2 transform -translate-x-1/2 text-7xl w-full flex gap-72">
+        <div className="absolute top-1/5 left-1/2 transform -translate-x-1/2 text-8xl w-full flex gap-72">
           <h1 className="flex-1 text-right">
             <span className="inline-block text-gradient-reverse leading-relaxed">
               Strategic
@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
             <button className="w-fit button-white">Learn more</button>
           </div>
           {/* subdiv: building image */}
-          <div className=" w-2/5 flex justify-center">
+          <div className="w-1/2 flex justify-center pr-10">
             <img src={SpurBuilding} className="w-full" alt="" />
           </div>
           {/* subdiv: right stats */}
@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
         {/* Bottom stats and media */}
         <div className="absolute bottom-0 w-screen h-44 flex">
           <div className="flex gap-10 items-end w-1/3 pl-14 pb-14">
-            <div className="">
+            <div>
               <p className="text-[#969CA1]">Employees</p>
               <h3>3195</h3>
             </div>
