@@ -40,11 +40,11 @@ const HeroSection: React.FC = () => {
             <button className="w-fit button-white">Learn more</button>
           </div>
           {/* subdiv: building image */}
-          <div className="w-1/2 flex justify-center pr-10">
+          <div className="w-1/2 flex justify-center">
             <img src={SpurBuilding} className="w-full" alt="" />
           </div>
           {/* subdiv: right stats */}
-          <div className="flex flex-col gap-5 pr-36 pt-24">
+          <div className="flex flex-col gap-5 mr-12 pr-32 pt-24">
             <div>
               <p className="font-thin">Companies utilizing resources</p>
               <h2>15K+</h2>
