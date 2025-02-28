@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   return (
     <header className="fixed flex w-full items-center justify-between px-10 py-6 z-50">
       {/* Directories */}
-      <div className="flex gap-x-5 ">
+      <div className="flex gap-x-5 font-thin">
         <a>Our Story</a>
         <a>Resources</a>
         <a>News</a>
