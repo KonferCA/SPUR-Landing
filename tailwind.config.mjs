@@ -38,15 +38,11 @@ export default {
       },
 
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        geist: ["Geist", "sans-serif"],
       },
 
       colors: {
         peachPuff: "#FDDDB7",
-      },
-
-      translate: {
-        0.75: "0.1875rem", // (0.125rem + 0.25) / 2
       },
     },
   },
