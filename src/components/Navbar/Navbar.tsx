@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
       </div>
       {/* Logo */}
       <div className="absolute left-1/2 transform -translate-x-1/2">
-        <img src={SpurLogo} className="w-8" alt="" />
+        <img src={SpurLogo} className="w-8" alt="SpurLogo" />
       </div>
       {/* Buttons */}
       <div className="flex gap-x-5">
