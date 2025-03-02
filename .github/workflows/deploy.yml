@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main # Deploy only on main branch pushes
+      - prod
   pull_request:
     branches:
       - main # Deploy PR previews
