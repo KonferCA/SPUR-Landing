@@ -10,23 +10,6 @@ export default {
 
   theme: {
     extend: {
-      keyframes: {
-        rotateUp: {
-          "0%": { transform: "rotate(0deg)" },
-          "100%": { transform: "rotate(-180deg)" },
-        },
-
-        rotateDown: {
-          "0%": { transform: "rotate(-180deg)" },
-          "100%": { transform: "rotate(0deg)" },
-        },
-      },
-
-      animation: {
-        rotateUp: "rotateUp 0.3s forwards",
-        rotateDown: "rotateDown 0.3s forwards",
-      },
-
       fontSize: {
         "2.5xl": ["1.6875rem", "1.2"],
         "3.5xl": ["2rem", "1.2"],
@@ -42,7 +25,11 @@ export default {
       },
 
       colors: {
-        peachPuff: "#FDDDB7",
+        darkNavy: "#0D1A26",
+        offWhite: "#F4FAFF",
+        spurOrange: "#FF7F26",
+        mutedNavy: "#2B3F53",
+        spurTeal: "#00BCD4",
       },
     },
   },
