@@ -22,6 +22,8 @@ body {
   }
 }
 
+/* Text Gradients */
+
 .text-gradient {
   @apply bg-gradient-to-tl from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
 }
