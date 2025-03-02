@@ -11,3 +11,10 @@ export { Navbar } from "./Navbar/Navbar";
  *
  */
 export { HeroSection } from "./sections/Hero.section";
+
+/*
+ *
+ * @component About Section
+ *
+ */
+export { AboutSection } from "./sections/About.section";
