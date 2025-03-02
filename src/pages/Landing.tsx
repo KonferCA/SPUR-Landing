@@ -1,11 +1,13 @@
-const Landing = () => {
-    return (
-        <div>
-            <h1 className="text-3xl font-bold underline">
-                Landing 
-            </h1>
-        </div>
-    );
+import { AboutSection } from "@components";
+
+const Landing: React.FC = () => {
+  return (
+    <div className="bg-[#050B10] transition ease-in">
+      <main>
+        <AboutSection />
+      </main>
+    </div>
+  );
 };
 
 export { Landing };
