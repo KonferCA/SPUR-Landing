@@ -14,35 +14,40 @@
   #### The official landing page for SPUR - see [here](https://spuric.com).
 </div>
 
-
 ## Quick Setup :hammer:
 
 > Install Node.js
+
 ```sh
 https://nodejs.org/en/download/
 ```
 
 > Install pnpm using npm
+
 ```sh
 $ npm install -g pnpm
 ```
 
 > Clone the repo
+
 ```sh
 $ git clone https://github.com/KonferCA/Konfer.ca.git
 ```
 
 > From your terminal, navigate to the root path of clone
+
 ```sh
 $ cd path/to/your/clone
 ```
 
 > Install dependencies
+
 ```sh
 $ pnpm i
 ```
 
 > Run local server
+
 ```sh
 $ pnpm dev
 ```
