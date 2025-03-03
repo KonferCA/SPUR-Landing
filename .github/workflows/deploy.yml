@@ -1,0 +1,51 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - main # Deploy only on main branch pushes
+      - prod
+  pull_request:
+    branches:
+      - main # Deploy PR previews
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8.10.4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.20.2
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build project
+        run: pnpm build
+
+      - name: Install Vercel CLI
+        run: pnpm add -g vercel
+
+      - name: Link Vercel Project
+        run: vercel link --token ${{ secrets.VERCEL_TOKEN }} --yes
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+      - name: Deploy to Vercel (Preview)
+        if: github.event_name == 'pull_request'
+        run: vercel --token ${{ secrets.VERCEL_TOKEN }} --target preview --yes
+
+      - name: Deploy to Vercel (Production)
+        if: github.event_name == 'push'
+        run: vercel --token ${{ secrets.VERCEL_TOKEN }} --prod --yes
