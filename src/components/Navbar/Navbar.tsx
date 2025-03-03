@@ -1,3 +1,4 @@
+import { Button } from "@components";
 import { SpurLogo } from "@assets";
 import React from "react";
 /*
@@ -22,8 +23,12 @@ const Navbar: React.FC = () => {
       </div>
       {/* Buttons */}
       <div className="flex gap-x-5">
-        <button className="button-gradient">Investor Portal</button>
-        <button className="button-gradient">Let's talk</button>
+        <Button newtab intent="primary">
+          Investor Portal
+        </Button>
+        <Button newtab intent="primary">
+          Let's talk
+        </Button>
       </div>
     </header>
   );
