@@ -2,6 +2,7 @@ import React from "react";
 import { cn } from "../../utils"; // Ensure this exists
 import { getButtonStyles } from "./Button.styles";
 import type { ButtonStylesProps } from "./Button.styles";
+import * as Tooltip from "@radix-ui/react-tooltip";
 
 /**
  * Button Props
@@ -13,6 +14,7 @@ type ButtonProps = ButtonStylesProps &
     link?: string;
     newtab?: boolean;
     norel?: boolean;
+    tooltip?: string;
   };
 
 /**
@@ -27,6 +29,7 @@ const Button: React.FC<ButtonProps> = ({
   norel,
   intent,
   className,
+  tooltip,
   onClick,
   ...buttonProps
 }) => {
@@ -38,27 +41,48 @@ const Button: React.FC<ButtonProps> = ({
     </>
   );
 
-  if (link) {
-    return (
-      <a
-        href={link}
-        target={newtab ? "_blank" : "_self"}
-        rel={norel ? "noreferrer" : undefined}
-        className={cn(getButtonStyles({ intent, className }))}
-      >
-        {buttonContent}
-      </a>
-    );
-  }
-
-  return (
+  // Renders either an <a> or <button> based on `link` prop
+  const buttonElement = link ? (
+    <a
+      href={link}
+      target={newtab ? "_blank" : "_self"}
+      rel={norel ? "noreferrer" : undefined}
+      className={cn(getButtonStyles({ intent, className }))}
+    >
+      {buttonContent}
+    </a>
+  ) : (
     <button
       className={cn(getButtonStyles({ intent, className }))}
       onClick={onClick}
-      {...buttonProps} // Pass only valid button props
+      {...buttonProps}
     >
       {buttonContent}
     </button>
+  );
+
+  // If no tooltip is provided, return the button normally
+  if (!tooltip) {
+    return buttonElement;
+  }
+
+  // If tooltip exists, wrap the button in a Radix Tooltip
+  return (
+    <Tooltip.Provider delayDuration={200}>
+      <Tooltip.Root>
+        <Tooltip.Trigger asChild>{buttonElement}</Tooltip.Trigger>
+        <Tooltip.Portal>
+          <Tooltip.Content
+            className="bg-gray-500 text-white text-xs px-3 py-1 rounded shadow-md"
+            side="top"
+            align="center"
+          >
+            {tooltip}
+            <Tooltip.Arrow className="fill-gray-500" />
+          </Tooltip.Content>
+        </Tooltip.Portal>
+      </Tooltip.Root>
+    </Tooltip.Provider>
   );
 };
 
