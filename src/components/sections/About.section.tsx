@@ -17,6 +17,18 @@ const AboutSection: React.FC = () => {
           </div>
         </div>
         <img className="absolute -top-8" src={HalfEllipse} />
+        <div className="absolute top-4/6 left-1/2 transform -translate-x-1/2 flex w-2/3">
+          <h1 className="w-full text-end text-5xl pr-10 pt-4">Our Mandate</h1>
+          <div className="flex flex-col items-start px-10">
+            <p>
+              Placerat maecenas aliquam primis duis viverra integer. Vehicula
+              nulla bibendum facilisis per quis vehicula risus donec euismod.
+              Curabitur aliquet sem vel fermentum lacinia. Aliquam sodales neque
+              lorem, aliquam luctus tellus viverra ut.
+            </p>
+            <button className="mt-7 button-white">Learn more</button>
+          </div>
+        </div>
       </section>
     </div>
   );
