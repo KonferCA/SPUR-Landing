@@ -1,5 +1,5 @@
 import React from "react";
-import { cn } from "../../utils"; // Ensure this exists
+import { cn } from "@utils";
 import { getButtonStyles } from "./Button.styles";
 import type { ButtonStylesProps } from "./Button.styles";
 import * as Tooltip from "@radix-ui/react-tooltip";
