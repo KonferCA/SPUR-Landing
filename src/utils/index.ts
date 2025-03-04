@@ -5,4 +5,4 @@
  */
 export { Router } from "./Router";
 
-export { cn } from "./utils";
+export { cn } from "./styles";
