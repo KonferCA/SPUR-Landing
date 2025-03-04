@@ -15,6 +15,7 @@ type ButtonProps = ButtonStylesProps &
     newtab?: boolean;
     norel?: boolean;
     tooltip?: string;
+    type?: "button" | "submit" | "reset";
   };
 
 /**
@@ -30,6 +31,7 @@ const Button: React.FC<ButtonProps> = ({
   intent,
   className,
   tooltip,
+  type = "button",
   onClick,
   ...buttonProps
 }) => {
@@ -53,6 +55,7 @@ const Button: React.FC<ButtonProps> = ({
     </a>
   ) : (
     <button
+      type={type}
       className={cn(getButtonStyles({ intent, className }))}
       onClick={onClick}
       {...buttonProps}
