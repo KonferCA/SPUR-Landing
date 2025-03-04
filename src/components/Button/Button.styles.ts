@@ -1,4 +1,5 @@
 import { cva, type VariantProps } from "class-variance-authority";
+import { ClassProp } from "class-variance-authority/types";
 import { twMerge } from "tailwind-merge";
 
 /**
@@ -31,7 +32,7 @@ const buttonStyles = cva(
 /**
  * Type for Button Styles Props
  */
-export type ButtonStylesProps = VariantProps<typeof buttonStyles>;
+export type ButtonStylesProps = VariantProps<typeof buttonStyles> & ClassProp;
 
 /**
  * Function to get the correct button styles dynamically
@@ -41,6 +42,6 @@ export type ButtonStylesProps = VariantProps<typeof buttonStyles>;
 export function getButtonStyles({
   intent,
   className,
-}: ButtonStylesProps & { className?: string }): string {
-  return twMerge(buttonStyles({ intent }), className);
+}: ButtonStylesProps): string {
+  return twMerge(buttonStyles({ intent }), className as string | undefined);
 }
