@@ -20,10 +20,6 @@ const buttonStyles = cva(
           "uppercase font-thin border-2 border-[#ffffff] rounded-full bg-transparent px-5 py-1.5 text-white hover:border-white transition-all duration-300 ease-in-out shadow-[0_0_15px_rgba(255,255,255,0.2)] hover:shadow-[0_0_25px_rgba(255,255,255,0.3)]",
         tertiary:
           "uppercase text-sm mb-2 px-6 py-3 text-white rounded-full bg-[#F4802F] transition-all duration-300 ease-in-out shadow-[0_0_15px_rgba(245,144,71,0.5)] hover:shadow-[0_0_25px_rgba(245,144,71,0.4)]",
-        danger:
-          "bg-red-600 text-white border-red-700 hover:bg-red-700 disabled:hover:bg-red-600 active:bg-red-800",
-        outline:
-          "bg-transparent text-black border-gray-500 hover:bg-gray-100 disabled:hover:bg-transparent active:bg-gray-200",
       },
     },
     defaultVariants: {
