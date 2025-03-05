@@ -9,7 +9,7 @@ import {
 const HeroSection: React.FC = () => {
   return (
     <div>
-      <section className="relative h-screen bg-[radial-gradient(circle,_rgba(150,156,161,0.25)_0%,_rgba(255,238,226,0)_70%)]">
+      <section className="relative h-screen bg-[radial-gradient(ellipse_40%_40%_at_50%_50%,_rgba(36,46,54,1)_1%,_rgba(255,238,226,0)_120%)]">
         {/* 4 Headers */}
         <div className="absolute top-34 left-1/2 transform -translate-x-1/2 text-8xl w-full flex gap-20 text-amber-500">
           <h1 className="flex-1 text-right">
