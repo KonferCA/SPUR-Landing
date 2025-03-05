@@ -1,4 +1,5 @@
 import { SpurBuilding, xLogo } from "@assets";
+import { Button } from "@components";
 import {
   DoubleArrowDownIcon,
   InstagramLogoIcon,
@@ -37,7 +38,7 @@ const HeroSection: React.FC = () => {
             <p className="text-right text-2xl">
               Advanced solutions for technology and innovation-focused companies
             </p>
-            <button className="w-fit button-white">Learn more</button>
+            <Button intent="secondary">Learn more</Button>
           </div>
           {/* subdiv: building image */}
           <div className="w-1/2 flex justify-center">
@@ -71,7 +72,7 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col items-center w-1/3 ">
-            <button className="button-orange">Get started</button>
+            <Button intent="tertiary">Get started</Button>
             <DoubleArrowDownIcon width={16} height={16} />
           </div>
           <div className="flex gap-5 w-1/3 justify-end items-end pr-14 pb-14">
