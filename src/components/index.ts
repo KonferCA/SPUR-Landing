@@ -1,6 +1,5 @@
 /*
  *
-<<<<<<< HEAD
  * @component Navbar
  *
  */
@@ -19,7 +18,6 @@ export { HeroSection } from "./sections/Hero.section";
  *
  */
 export { AboutSection } from "./sections/About.section";
-<<<<<<< HEAD
 
 /*
  *
@@ -27,11 +25,3 @@ export { AboutSection } from "./sections/About.section";
  *
  */
 export { Button } from "./Button/Button";
-=======
- * @component Hero Section
- *
- */
-export { AboutSection } from "./sections/About.section";
->>>>>>> d0367f1 ([setup] about section header)
-=======
->>>>>>> e5163fab39afa79bb28a8ddc82104a5aa89de3e1
