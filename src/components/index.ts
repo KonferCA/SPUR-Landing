@@ -14,6 +14,13 @@ export { HeroSection } from "./sections/Hero.section";
 
 /*
  *
+ * @component Resources Section
+ *
+ */
+export { ResourcesSection } from "./sections/Resources.section";
+
+/*
+ *
  * @component Button
  *
  */

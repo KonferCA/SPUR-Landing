@@ -1,4 +1,4 @@
-import { Navbar, HeroSection } from "@components";
+import { Navbar, HeroSection, ResourcesSection } from "@components";
 
 const Landing: React.FC = () => {
   return (
@@ -6,6 +6,7 @@ const Landing: React.FC = () => {
       <Navbar />
       <main>
         <HeroSection />
+        <ResourcesSection />
       </main>
     </div>
   );
