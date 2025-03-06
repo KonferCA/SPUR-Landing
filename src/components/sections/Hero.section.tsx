@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
           </h1>
         </div>
         {/* Stats and Building */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center w-screen h-screen">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center w-full h-screen">
           {/* subdiv: left callout */}
           <div className="flex flex-col items-end gap-5 pl-32 pt-18">
             <p className="text-right text-2xl">
@@ -60,7 +60,7 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
         {/* Bottom stats and media */}
-        <div className="absolute bottom-0 w-screen h-44 flex">
+        <div className="absolute bottom-0 w-full h-44 flex">
           <div className="flex gap-10 items-end w-1/3 pl-14 pb-14">
             <div>
               <p className="text-[#969CA1]">Employees</p>
