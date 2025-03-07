@@ -14,7 +14,20 @@ export { HeroSection } from "./sections/Hero.section";
 
 /*
  *
+ * @component Marketplace Section
+ *
+ */
+export { MarketplaceSection } from "./sections/Marketplace.section";
+
+/*
+ *
  * @component Button
  *
  */
 export { Button } from "./Button/Button";
+/*
+ *
+ * @component Card
+ *
+ */
+export { CardComponent } from "./Card/Card";
