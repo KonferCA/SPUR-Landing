@@ -1,7 +1,11 @@
 import { Button } from "@components";
 import { Vexacool } from "@assets";
 import { useState } from "react";
-import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import {
+  ArrowTopRightIcon,
+  CaretLeftIcon,
+  CaretRightIcon,
+} from "@radix-ui/react-icons";
 
 const CardComponent: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -16,14 +20,21 @@ const CardComponent: React.FC = () => {
     },
     {
       id: 2,
-      title: "Project Alpha",
+      title: "Vexawarm Project",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
       image: Vexacool,
     },
     {
       id: 3,
-      title: "TechZone Initiative",
+      title: "Project Zeus",
+      description:
+        "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.",
+      image: Vexacool,
+    },
+    {
+      id: 3,
+      title: "Project Thor",
       description:
         "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.",
       image: Vexacool,
@@ -65,18 +76,29 @@ const CardComponent: React.FC = () => {
         <p className="text-sm text-white">{activeCard.description} </p>
       </div>
       <div className="flex justify-between mt-10">
-        <div>
+        <div className="flex items-center justify-center">
           <button
             onClick={handlePrev}
-            className="bg-gray-800 px-4 py-2 rounded-lg text-white hover:bg-gray-600 mx-2"
+            className="px-1 py-1 rounded-lg text-white hover:bg-gray-600 mx-2"
           >
-            Prev
+            <CaretLeftIcon />
           </button>
+          {/* Track Progress - Small Rectangles */}
+          <div className="flex justify-center space-x-2">
+            {cards.map((_, index) => (
+              <div
+                key={index}
+                className={`w-4 h-1 rounded-md ${
+                  index === activeIndex ? "bg-[#F59047]" : "bg-gray-500"
+                }`}
+              />
+            ))}
+          </div>
           <button
             onClick={handleNext}
-            className="bg-gray-800 px-4 py-2 rounded-lg text-white hover:bg-gray-600 mx-2"
+            className="px-1 py-1 rounded-lg text-white hover:bg-gray-600 mx-2"
           >
-            Next
+            <CaretRightIcon />
           </button>
         </div>
         <Button intent="secondary">View Project</Button>
