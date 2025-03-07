@@ -3,7 +3,7 @@ import { Button, CardComponent } from "@components";
 const MarketplaceSection: React.FC = () => {
   return (
     <div>
-      <section className="relative w-full h-screen bg-gradient-to-tr from-[#F59047] via-[#2C2C2F]/40 to-[#0B1219] flex justify-center items-center">
+      <section className="relative w-full h-screen bg-gradient-to-tr from-[#F59047]/70 via-[#2C2C2F]/40 to-[#0B1219] flex justify-center items-center">
         <div className="flex flex-col w-1/2 gap-32 p-42">
           <div>
             <div className="flex gap-5 leading-relaxed text-6xl">
@@ -34,7 +34,7 @@ const MarketplaceSection: React.FC = () => {
           </div>
         </div>
         {/* Card slide deck */}
-        <div className="relative">
+        <div className="relative w-1/2">
           <CardComponent />
         </div>
       </section>
