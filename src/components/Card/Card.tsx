@@ -56,7 +56,7 @@ const CardComponent: React.FC = () => {
   const activeCard = cards[activeIndex];
 
   return (
-    <div className="max-w-lg mx-auto p-8 border-1 border-white bg-opacity-60 rounded-4xl shadow-lg text-white">
+    <div className="bg-[#0B1219]/5 backdrop-blur-3xl elative max-w-lg mx-auto p-8 border-1 border-white/30 rounded-4xl text-white shadow-inner-custom">
       {/* Image & Title */}
       <div className="relative">
         <img
@@ -75,6 +75,7 @@ const CardComponent: React.FC = () => {
       <div className="mt-3">
         <p className="text-sm text-white">{activeCard.description} </p>
       </div>
+      {/* Buttons */}
       <div className="flex justify-between mt-10">
         <div className="flex items-center justify-center">
           <button

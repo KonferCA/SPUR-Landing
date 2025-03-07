@@ -3,7 +3,7 @@ import { Button, CardComponent } from "@components";
 const MarketplaceSection: React.FC = () => {
   return (
     <div>
-      <section className="relative w-full h-screen bg-[#0B1219] to-10% flex justify-center items-center">
+      <section className="relative w-full h-screen bg-gradient-to-tr from-[#F59047] via-[#2C2C2F]/40 to-[#0B1219] flex justify-center items-center">
         <div className="flex flex-col w-1/2 gap-32 p-42">
           <div>
             <div className="flex gap-5 leading-relaxed text-6xl">
@@ -24,7 +24,7 @@ const MarketplaceSection: React.FC = () => {
             <Button intent="secondary">Investment Portal</Button>
           </div>
           <div>
-            <h2>SPUR Innovation Fund</h2>
+            <h2 className="text-white">SPUR Innovation Fund</h2>
             <p>
               Placerat maecenas aliquam primis duis viverra integer. Vehicula
               nulla bibendum facilisis per quis vehicula risus donec euismod.
@@ -34,7 +34,7 @@ const MarketplaceSection: React.FC = () => {
           </div>
         </div>
         {/* Card slide deck */}
-        <div className="w-1/2 p-42">
+        <div className="relative">
           <CardComponent />
         </div>
       </section>
