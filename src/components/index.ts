@@ -21,6 +21,13 @@ export { AboutSection } from "./sections/About.section";
 
 /*
  *
+ * @component Resources Section
+ *
+ */
+export { ResourcesSection } from "./sections/Resources.section";
+
+/*
+ *
  * @component Button
  *
  */
