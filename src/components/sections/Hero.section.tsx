@@ -9,7 +9,7 @@ import {
 const HeroSection: React.FC = () => {
   return (
     <div>
-      <section className="relative h-screen bg-[radial-gradient(circle,_rgba(150,156,161,0.25)_0%,_rgba(255,238,226,0)_70%)]">
+      <section className="relative h-screen bg-[radial-gradient(ellipse_40%_40%_at_50%_50%,_rgba(36,46,54,1)_1%,_rgba(255,238,226,0)_120%)]">
         {/* 4 Headers */}
         <div className="absolute top-34 left-1/2 transform -translate-x-1/2 text-8xl w-full flex gap-20 text-amber-500">
           <h1 className="flex-1 text-right">
@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
           </h1>
         </div>
         {/* Stats and Building */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center w-screen h-screen">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center w-full h-screen">
           {/* subdiv: left callout */}
           <div className="flex flex-col items-end gap-5 pl-32 pt-18">
             <p className="text-right text-2xl">
@@ -60,7 +60,7 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
         {/* Bottom stats and media */}
-        <div className="absolute bottom-0 w-screen h-44 flex">
+        <div className="absolute bottom-0 w-full h-44 flex">
           <div className="flex gap-10 items-end w-1/3 pl-14 pb-14">
             <div>
               <p className="text-[#969CA1]">Employees</p>
